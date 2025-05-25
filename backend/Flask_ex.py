@@ -22,7 +22,7 @@ from concurrent.futures import ThreadPoolExecutor
 from sklearn.preprocessing import StandardScaler
 from shapely.ops import unary_union
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)
 
 async def get_latlong(address, api_key):
