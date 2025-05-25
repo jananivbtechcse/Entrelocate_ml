@@ -796,5 +796,5 @@ async def analyze_business():
     return jsonify(serializable_results)
 
 
-if _name_ == "_main_":
+if _name_ == "__main__":
     app.run(debug=True)
