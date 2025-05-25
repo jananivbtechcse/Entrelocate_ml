@@ -1,0 +1,38 @@
+.navbar{
+    display:flex;
+    margin-top:0em;
+    position: absolute;
+    position: fixed;
+    justify-content: space-between;
+    gap:10px;
+    padding: 10px 10px;
+    width:98.7%;
+    display: flex;
+    align-items: center;
+    top: 0;  /* ✅ Add this to keep it at the top */
+    left: 0;
+    z-index: 1000;
+    background-color: aliceblue;
+    height: 50px;
+}
+.nav-links{
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:30px;
+    color: rgb(0, 0, 0);
+    list-style: none;
+
+}
+
+.nav-links a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures it follows the parent color */
+  }
+  
+  .nav-links li {
+    list-style: none; /* Removes default list styling */
+  }
+  
+

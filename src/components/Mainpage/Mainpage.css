@@ -1,0 +1,303 @@
+/* General Section Styling */
+.sec1, .sec2, .sec3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 1150px;
+    height: 450px;
+    margin: auto;
+    background-color: #778da9;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.mainpage{
+    margin-top: 2.3cm;
+}
+
+/* Hover Effect */
+.sec1:hover, .sec2:hover, .sec3:hover {
+    background-color: #415a77;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.chumma {
+    height: 110px;
+}
+
+/* Image Styling */
+.sec1 img, .sec2 img, .sec3 img {
+    width: 50%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Content Box Styling */
+.loc-content, .bus-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+/* Text Styling */
+.loc-content h1, .bus-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: -2em;
+    color: white;
+}
+
+.bus-content {
+    padding-left: 30px;
+}
+
+.loc-content p, .bus-content p {
+    font-size: 21px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: white;
+}
+
+/* Button Styling */
+.mainp-btn1, .mainp-btn2 {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.mainp-btn1:hover, .mainp-btn2:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.chumma1 {
+    height: 60px;
+}
+
+/* Popup Styles (from NewBusiness.css) */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-box {
+    display: flex;
+    background: rgb(246, 244, 230);
+    width: 800px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 15cm;
+    background-image: url('D:\\react\\EntreLocate_ml-master\\src\\assets\\popup-back.png');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.popup-content {
+    display: flex;
+    width: 100%;
+}
+
+.popup-left {
+    background-color: #262626;
+    color: #fff;
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-left img {
+    width: 420px;
+    height: 430px;
+    margin-bottom: 20px;
+}
+
+.popup-left h3 {
+    margin-top: 10px;
+}
+
+.popup-right {
+    padding: 40px;
+    width: 60%;
+    height: 30cm;
+}
+
+.popup-right h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.popup-form {
+    display: cover;
+    flex-direction: column;
+}
+
+.popup-form h2 {
+    color: black;
+    font-weight: 300;
+}
+
+.popup-form button {
+    background-color: gray;
+}
+
+.popup-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.popup-checkbox input {
+    margin-right: 10px;
+}
+
+.popup-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.popup-button {
+    padding: 12px;
+    background-color: #666879;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-button:hover {
+    background-color: #a1a2a9;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* New Popup A Styles */
+.loc-popup-container {
+    position: relative;
+  }
+  
+  .loc-popup-form {
+    background-color: #b0b9c5;
+    border-radius: 8px;
+    padding: 50px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .loc-popup-heading {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .loc-popup-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    color: #1b263b;
+  }
+  
+  .loc-popup-input::placeholder {
+    color: #aaa;
+  }
+  
+  .loc-popup-form .loc-popup-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1b263b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  
+  .loc-popup-form .loc-popup-button:hover {
+    background-color: #7395c1;
+    color: black;
+  }
+  
+  .loc-popup-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 1;
+  }
+  
+  .loc-popup-close-btn:hover {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Overlay styling */
+  .loc-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }

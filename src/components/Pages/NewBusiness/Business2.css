@@ -1,0 +1,51 @@
+.business-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    margin: 20px;
+  }
+  
+  .business-card {
+    background-color: #e0f7fa; 
+    border: 1px solid #00acc1;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    width: 700px; 
+    padding: 25px;
+    margin: 15px 0; 
+    text-align: left;
+  }
+  
+  .business-card h3 {
+    color: #006064; 
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  
+  .business-card h4 {
+    color: #00838f; 
+    margin-bottom: 8px;
+  }
+  
+  .business-card ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .business-card ul li {
+    background-color: #b2ebf2; 
+    padding: 10px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+  }
+  
+  .business-card ul li:hover {
+    background-color: #80deea; 
+  }
+  
+  @media (max-width: 768px) {
+    .business-card {
+      width: 90%; 
+    }
+  }

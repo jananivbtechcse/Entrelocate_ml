@@ -1,0 +1,85 @@
+/* 
+
+.homes {
+  font-family: Arial, sans-serif;
+  background-color: #2E2E2E;
+  min-height: 100vh;
+}
+
+.logo {
+  height: 40px;
+}
+
+.home-body {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.home-body img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.popup-modal h2 {
+  margin-bottom: 20px;
+}
+
+.popup-modal select,
+.popup-modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-modal button {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-modal .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+ */
+
+
+ .home-nav{
+  display:flex;
+ }

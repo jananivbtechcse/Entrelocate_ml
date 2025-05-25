@@ -1,0 +1,409 @@
+html, body, #root {
+    background-color: #252455 !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* #2a0d2a */
+
+/* Hero section */
+.hero {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 100px 10%;
+    text-align: left;
+}
+
+/* Fix hero text visibility */
+/* .hero h1, .hero p {
+    color: rgb(255, 255, 255); 
+} */
+
+
+/* Page 1 Section */
+.pg1 {
+    width: 100%;
+    height: 600px;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: aliceblue;
+    height: 60px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation links */
+.nav-links {
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    color: black;
+}
+
+/* Navbar Button */
+/* .navbar button {
+    transform: translateX(-20px);
+    padding: 8px 15px;
+    background-color: #778da9;
+    border: none;
+    color: white;
+    cursor: pointer;
+} */
+.signup-btn button{
+    background-color: #778da9;
+    border-radius: 25px;
+    height:50px;
+    width: 80px;
+}
+.log button{
+    background-color: #1b263b;
+    border-radius: 25px;
+    height:50px;
+    width: 80px;
+    color: aliceblue;
+    margin-right: 40px;
+}
+.log button:hover{
+    background-color: #778da9;
+}
+
+.signup-btn:hover {
+    background-color: #0d1b2a;
+}
+
+/* Left Hero Section */
+.left {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; 
+    width: 40%;
+    padding-top: 80px;
+}
+.left h1{
+    font-size: 1.5cm;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-left: none;
+
+
+}
+.left p{
+    font-size: large;
+    text-align: left;
+}
+.right{
+    width:55%;
+}
+
+/* Page 2 Section */
+.pg2 {
+    background-color: #e0e1dd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 140px;
+    color: black;
+    height: 500px;
+}
+
+.list-items {
+    font-size: large;
+}
+
+.left-content {
+    flex: 1;
+    text-align: left;
+    padding:10px 10px;
+
+}
+
+.pg2 .left-content h1{
+    font-size: 1.2cm;
+    color: black;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-left: none;
+    text-align: left;
+
+}
+/* .left-content h1 p{
+    color: black;
+} */
+
+.right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.pg2-pic {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional Spacing Elements */
+.chumma {
+    height: 80px;
+}
+
+.chumma2 {
+    height: 30px;
+}
+
+.chumma3 {
+    height: 10px;
+}
+
+.login-input .input-wrapper{
+      justify-content: space-between;
+      gap:20px;
+
+}
+
+/* Page 3 */
+.pg3 {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.pg3 h1{
+    font-size: 1.4cm;
+}
+.pg3 p{
+    color: white;
+    font-size: large;
+}
+/* Cards Section */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Cards */
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e0e1dd;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.card img {
+    width: 90px;
+    height: 70px;
+}
+
+.card-content {
+    padding: 20px;
+    font-weight: 600;
+
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #1b263b;
+}
+
+.card p {
+    color: #555;
+}
+
+
+
+.card button:hover {
+    background-color: #0d1b2a;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay to disable hero content */
+.signup-modal-overlay {
+    position: fixed; /* Ensures the modal covers the screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears on top */
+  }
+
+  .signup-head{
+    color: white;
+  }
+  
+  /* Disable scrolling when modal is open */
+  body.modal-open {
+    overflow: hidden;
+  }
+  
+  /* Login Modal Styles */
+.login-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* .login-modal-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    backdrop-filter: blur(10px);
+    color: #fff;
+  } */
+  
+  .login-modal-content h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-input {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .login-input input {
+    width: 84%;
+    padding: 12px;
+    padding-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: rgba(82, 79, 79, 0.2);
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .login-input .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .remember-forgot a {
+    color: #fff;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .login-submit {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .login-submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .register-link {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .register-link a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+  }
+  
+  .error {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .message {
+    color: #6bff6b;
+    font-size: 14px;
+    margin-top: 5px;
+  }
