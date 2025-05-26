@@ -24,6 +24,12 @@ from shapely.ops import unary_union
 
 app = Flask(__name__)
 CORS(app)
+# ADD THIS ROOT ROUTE (add this anywhere after line 22 where you have CORS(app))
+@app.route('/')
+def home():
+    return "Flask app is running successfully!"
+
+
 
 async def get_latlong(address, api_key):
     async with aiohttp.ClientSession() as session:
@@ -797,4 +803,10 @@ async def analyze_business():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import os
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
+    #app.run(debug=True)
+    # ADD THIS AT THE VERY END OF YOUR FILE (after all your functions)
+
+   
